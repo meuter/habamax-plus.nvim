@@ -169,6 +169,11 @@ hi NeoTreeGitConflict guifg=#f0b1b1 guibg=NONE gui=NONE cterm=NONE
 hi NeoTreeGitModified guifg=#f0ecad guibg=NONE gui=NONE cterm=NONE
 hi NeoTreeGitUntracked guifg=#aff0d3 guibg=NONE gui=NONE cterm=NONE
 
+" DAP support
+hi DapBreakpoint guifg=#FF0000 guibg=NONE gui=NONE cterm=NONE
+hi DapStopped guifg=#87af87 guibg=NONE gui=NONE cterm=NONE
+
+
 if s:t_Co >= 256
   hi! link Terminal Normal
   hi! link StatuslineTerm Statusline
