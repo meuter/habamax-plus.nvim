@@ -71,7 +71,6 @@ hi ALEVirtualTextInfo guifg=#d7d787 guibg=NONE gui=NONE cterm=NONE
 hi Normal guifg=#bcbcbc guibg=#1c1c1c gui=NONE cterm=NONE
 hi Statusline guifg=#1c1c1c guibg=#9e9e9e gui=NONE cterm=NONE
 hi StatuslineNC guifg=#1c1c1c guibg=#767676 gui=NONE cterm=NONE
-hi VertSplit guifg=#767676 guibg=#767676 gui=NONE cterm=NONE
 hi TabLine guifg=#1c1c1c guibg=#767676 gui=NONE cterm=NONE
 hi TabLineFill guifg=#1c1c1c guibg=#767676 gui=NONE cterm=NONE
 hi TabLineSel guifg=NONE guibg=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
@@ -86,12 +85,10 @@ hi NonText guifg=#585858 guibg=NONE gui=NONE cterm=NONE
 hi EndOfBuffer guifg=#585858 guibg=NONE gui=NONE cterm=NONE
 hi SpecialKey guifg=#585858 guibg=NONE gui=NONE cterm=NONE
 hi FoldColumn guifg=#585858 guibg=NONE gui=NONE cterm=NONE
-hi Visual guifg=#1c1c1c guibg=#87afaf gui=NONE cterm=NONE
 hi VisualNOS guifg=#1c1c1c guibg=#5f8787 gui=NONE cterm=NONE
 hi Pmenu guifg=NONE guibg=#262626 gui=NONE cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#767676 gui=NONE cterm=NONE
 hi PmenuSbar guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
-hi PmenuSel guifg=#1c1c1c guibg=#afaf87 gui=NONE cterm=NONE
 hi SignColumn guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Error guifg=#d75f5f guibg=#1c1c1c gui=reverse cterm=reverse
 hi ErrorMsg guifg=#d75f5f guibg=#1c1c1c gui=reverse cterm=reverse
@@ -136,11 +133,26 @@ hi diffAdded guifg=#87af87 guibg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#d75f5f guibg=NONE gui=NONE cterm=NONE
 hi diffSubname guifg=#af87af guibg=NONE gui=NONE cterm=NONE
 
-" modified from original habamax
+" diff color: let syntax hl in fg + modified background
 hi DiffAdd guifg=NONE guibg=#044025 gui=NONE cterm=NONE
 hi DiffDelete guifg=NONE guibg=#400404 gui=NONE cterm=NONE
 hi DiffText guifg=NONE guibg=#403d04 gui=NONE cterm=NONE
 hi DiffChange guifg=NONE guibg=#044025 gui=NONE cterm=NONE
+
+" selection color: let syntax hl in fg + modified background
+hi Visual guifg=NONE guibg=#253747 gui=NONE cterm=NONE
+hi PmenuSel guifg=NONE guibg=#253747 gui=NONE cterm=NONE
+
+" reset vertical split line
+hi VertSplit guifg=NONE guibg=NONE gui=NONE cterm=NONE
+
+" modified the background of various floating window
+hi Pmenu guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+hi FloatBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+hi LspInfoBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+hi TelescopeBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+hi TelescopeNormal guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+
 
 if s:t_Co >= 256
   hi! link Terminal Normal
