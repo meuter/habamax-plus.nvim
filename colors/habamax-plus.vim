@@ -146,13 +146,28 @@ hi PmenuSel guifg=NONE guibg=#253747 gui=NONE cterm=NONE
 " reset vertical split line
 hi VertSplit guifg=NONE guibg=NONE gui=NONE cterm=NONE
 
-" modified the background of various floating window
+" modified floating window
 hi Pmenu guifg=NONE guibg=#272727 gui=NONE cterm=NONE
 hi FloatBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+
+" nvim-lspconfig support
 hi LspInfoBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
+
+" telescope support
 hi TelescopeBorder guifg=NONE guibg=#272727 gui=NONE cterm=NONE
 hi TelescopeNormal guifg=NONE guibg=#272727 gui=NONE cterm=NONE
 
+" gitsigns support
+hi GitSignsChange guifg=#c2c253 guibg=NONE gui=NONE cterm=NONE
+
+" Neotree support
+hi NeoTreeDirectoryIcon guifg=#6ca6cd guibg=NONE gui=NONE cterm=NONE
+hi NeoTreeDirectoryName guifg=#ffffff guibg=NONE gui=NONE cterm=NONE
+hi NeoTreeRootName guifg=#ffffff guibg=NONE gui=bold cterm=bold
+hi NeoTreeGitAdded guifg=#aff0d3 guibg=NONE gui=NONE cterm=NONE
+hi NeoTreeGitConflict guifg=#f0b1b1 guibg=NONE gui=NONE cterm=NONE
+hi NeoTreeGitModified guifg=#f0ecad guibg=NONE gui=NONE cterm=NONE
+hi NeoTreeGitUntracked guifg=#aff0d3 guibg=NONE gui=NONE cterm=NONE
 
 if s:t_Co >= 256
   hi! link Terminal Normal
