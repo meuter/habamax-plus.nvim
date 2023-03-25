@@ -132,13 +132,15 @@ hi Directory guifg=#87afaf guibg=NONE gui=bold cterm=bold
 hi Conceal guifg=#767676 guibg=NONE gui=NONE cterm=NONE
 hi Ignore guifg=NONE guibg=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi Debug guifg=#5f8787 guibg=NONE gui=NONE cterm=NONE
-hi DiffAdd guifg=#000000 guibg=#87af87 gui=NONE cterm=NONE
-hi DiffDelete guifg=#af875f guibg=NONE gui=NONE cterm=NONE
 hi diffAdded guifg=#87af87 guibg=NONE gui=NONE cterm=NONE
 hi diffRemoved guifg=#d75f5f guibg=NONE gui=NONE cterm=NONE
 hi diffSubname guifg=#af87af guibg=NONE gui=NONE cterm=NONE
-hi DiffText guifg=#000000 guibg=#d7d7d7 gui=NONE cterm=NONE
-hi DiffChange guifg=#000000 guibg=#afafaf gui=NONE cterm=NONE
+
+" modified from original habamax
+hi DiffAdd guifg=NONE guibg=#044025 gui=NONE cterm=NONE
+hi DiffDelete guifg=NONE guibg=#400404 gui=NONE cterm=NONE
+hi DiffText guifg=NONE guibg=#403d04 gui=NONE cterm=NONE
+hi DiffChange guifg=NONE guibg=#044025 gui=NONE cterm=NONE
 
 if s:t_Co >= 256
   hi! link Terminal Normal
